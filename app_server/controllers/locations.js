@@ -4,10 +4,10 @@ var request = require('request');
 
 
 const apiOptions = {
-  server: "https://loc8r-api2021810013.onrender.com"
+  server: "http://localhost:3000"
 };
 if (process.env.NODE_ENV === 'production') {
-  apiOptions.server = 'https://yourapi.com';
+  apiOptions.server = 'https://loc8r-api2021810013.onrender.com';
 }
 
 const requestOptions ={
@@ -205,4 +205,5 @@ module.exports = {
   addReview,
   doAddReview
 };
+
 
